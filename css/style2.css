@@ -11,38 +11,62 @@ body {
     margin: auto;
     padding: 20px;
     text-align: center;
+    padding: 5px 5px;
 }
 
 .header {
     margin-bottom: 20px;
 }
 
-img {
-    width: 25px;
-}
 
 .header_skip {
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    justify-content:center;
     width: 100%;
-    padding: 10px 20px;
+    align-items: center;
+    padding: 10px 0px;
 }
 
-.skip-button {
-    float: right;
+img {
+width: 25px;
+}
+
+/* Style for the back-icon hover effect */
+.header_skip #backIcon:hover {
+    filter: invert(21%) sepia(79%) saturate(2050%) hue-rotate(191deg) brightness(94%) contrast(102%);
+}
+
+/* Centering and setting full width for the progress-bar image */
+.progress-bar {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 0px 10px;
+}
+
+.progress-bar img {
+    width: 100%;
+    margin-bottom: 6px; 
+
+}
+
+.skip-link {
+    float: left;
     background: none;
     border: none;
-    font-family: 'Inter', sans-serif;
+    text-decoration: none;
     font-weight: 400;
-    font-size: 14px;
     color: #959595;
     cursor: pointer;
-    margin-bottom: 13px;
+    margin-bottom: 6px; 
+    font-size: 14px;
+}
+.skip-link:hover {
+    color: rgb(53, 79, 231);
 }
 
+
 h1 {
-    font-family: 'Inter', sans-serif;
     font-weight: 700;
     font-size: 24px;
     color: #000;
@@ -50,7 +74,6 @@ h1 {
 }
 
 .p1 {
-    font-family: 'Inter', sans-serif;
     font-weight: 400;
     font-size: 12px;
     color: #959595;
@@ -58,29 +81,28 @@ h1 {
 
 .video-container {
     background-color: #f0f0f0;
-    padding: 20px;
     border-radius: 10px;
-    margin-bottom: 20px;
+    cursor: pointer;  /* Ensures the video is clickable */
 }
-
-.fever {
-    color: #F16675;
-}
-
-video {
-    width: 100%;
+    /* margin-bottom: 20px; */
+    
+iframe {
     border-radius: 10px;
 }
+
 
 .next-button {
     background-color: #F16675;
     color: white;
     border: none;
-    padding: 16px 74px; /* 74px à gauche et à droite, 16px en haut et en bas */
+    padding: 16px 74px; /* 74px on left and right, 16px on top and bottom */
     margin-top: 100px;
     border-radius: 5px;
     cursor: pointer;
-    font-family: 'Inter', sans-serif;
     font-weight: 600; /* SemiBold */
-    font-size: 14px; /* Taille 14px */
+    font-size: 14px; /* Font size 14px */
+}
+
+.next-button:hover{
+    background-color: #d43d4c;
 }

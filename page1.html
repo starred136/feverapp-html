@@ -54,7 +54,14 @@ h1 {
   justify-content: space-between;
   padding: 16px 8px 22px; /* Updated horizontal padding */
   box-sizing: border-box;
+  cursor: pointer;
+  text-decoration: none;
 }
+
+.carts{
+  text-decoration: none;
+}
+
 
 /* Circle Styles */
 .circle {
@@ -77,6 +84,7 @@ h1 {
 .circle.small {
   width: 93px;
   height: 93px;
+  
 }
 
 .circle.large {
@@ -106,31 +114,46 @@ p {
   <div class="container">
     <h1>What can we help you with?</h1>
     <div class="sections">
-      <div class="section">
-        <div class="circle small">
-          <img src="child-fever.png" alt="My child has a Fever">
+
+      <a href="page2.html" class="carts" >
+        <div class="section">
+          <div class="circle small">
+            <img src="assets/child-fever.png" alt="My child has a Fever">
+          </div>
+          <p>My child has a Fever</p>
         </div>
-        <p>My child has a Fever</p>
-      </div>
-      <div class="section">
-        <div class="circle small">
-          <img src="doctor.png" alt="Should I see a Doctor?">
+      </a>
+        
+
+      <a href="page2.html" class="carts" >
+        
+        <div class="section">
+          <div class="circle small">
+            <img src="assets/doctor.png" alt="Should I see a Doctor?">
+          </div>
+          <p>Should I see a Doctor?</p>
         </div>
-        <p>Should I see a Doctor?</p>
-      </div>
-      <div class="section">
-        <div class="circle large custom-bg">
-          <img src="medications.png" alt="Ibuprofen, Paracetamol, Fever Juice, Antibiotics?">
+      </a>
+
+      <a href="page2.html" class="carts" >
+        <div class="section">
+          <div class="circle large custom-bg">
+            <img src="assets/medications.png" alt="Ibuprofen, Paracetamol, Fever Juice, Antibiotics?">
+          </div>
+          <p>Ibuprofen, Paracetamol, <br>Fever Juice, Antibiotics?</p>
         </div>
-        <p>Ibuprofen, Paracetamol, <br>Fever Juice, Antibiotics?</p>
-      </div>
-      <div class="section">
-        <div class="circle small custom-bg">
-          <img src="info-library.png" alt="Info Library">
+      </a>
+     
+     <a href="page2.html" class="carts" > 
+       <div class="section">
+         <div class="circle small custom-bg">
+           <img src="assets/info-library.png" alt="Info Library">
+          </div>
+          <p>Info Library</p>
         </div>
-        <p>Info Library</p>
       </div>
-    </div>
+    </a>
+  
   </div>
 </body>
 </html>
