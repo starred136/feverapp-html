@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>When should I see a Doctor?</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap');
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f9f9f9;
+            margin: 0;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 400px;
+            margin: auto;
+            padding: 16px;
+            text-align: center;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            flex: 1;
+        }
+
+        .header {
+            margin-top: 16px;
+            margin-bottom: 8px;
+        }
+
+        .header_skip {
+            display: flex;
+            justify-content: center;
+            width: 95%;
+            align-items: center;
+            padding: 10px 0;
+        }
+
+        .BackArrow {
+            width: 32px;
+            height: 32px;
+            margin-left: 16px;
+        }
+
+        .progress-bar img {
+            width: 80%;
+            margin-bottom: 6px;
+            margin-left: 45px;
+            margin-right: 2px;
+        }
+
+        .skip-link {
+            float: left;
+            background: none;
+            border: none;
+            text-decoration: none;
+            font-weight: 400;
+            color: #959595;
+            cursor: pointer;
+            margin-bottom: 6px;
+            font-size: 14px;
+        }
+
+        h1, .WhenShouldISeeDoctorHeader {
+            font-size: 24px !important;
+            font-weight: bold !important;
+            color: black;
+            text-align: center;
+            margin-top: 8px;
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-size: 12px;
+            font-weight: 400;
+            color: #959595;
+            text-align: center;
+            margin-bottom: 32px;
+        }
+
+        .warning-btn {
+            width: 96%;
+            background-color: #FFDBDF;
+            color: black;
+            font-size: 14px;
+            font-weight: 500;
+            padding: 16px;
+            border-radius: 8px;
+            text-align: center;
+            margin-left: 4%;
+        }
+
+        .warning-btn + .warning-btn {
+            margin-top: 4px;
+        }
+
+        
+    </style>
+</head>
+<body>
+
+    <div class="WhenShouldISeeDoctorPage1 container">
+        <div class="header">
+            <div class="header_skip">
+                <img src="assets/back-icon.png" alt="Back" class="BackArrow">
+                <div class="progress-bar">
+                    <img src="assets/prog-icon.png" alt="Progress">
+                </div>
+                <a href="#" class="skip-link">Skip</a>
+            </div>
+        </div>
+
+        <h1 class="WhenShouldISeeDoctorHeader">When should I see a Doctor?</h1>
+        <p class="WhenShouldISeeDoctorDescription">Consult a doctor if any of these warning signs shows up.</p>
+
+        <div class="WhenShouldISeeDoctorOptions mt-6 space-y-3">
+            <div class="warning-btn SevereHeadachesButton">Altered consciousness</div>
+            <div class="warning-btn VeryIllOrSensitiveButton">Non-blanching rash</div>
+            <div class="warning-btn InfantFeverButton">Fever over 40 °C in the morning</div>
+            <div class="warning-btn ConsciousnessCloudingButton">Fever for over 3 days</div>
+            <div class="warning-btn HighPitchedCryingButton">You are very concerned</div>
+        </div>
+    </div>
+
+</body>
+</html>
