@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please Consult a Doctor</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+        body, html {
+            font-family: 'Inter', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-size: cover;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        /* Centered container for the page */
+        .container {
+            width: 100%;
+            max-width: 393px;
+            height: 100vh; /* Full height */
+            background: white;
+            overflow: hidden;
+            position: relative;
+            border-radius: 8px;
+        }
+
+        /* Image starts at the very top */
+        .PleaseConsultADoctorPageImage {
+            width: 100%;
+            position: relative;
+        }
+
+        .PleaseConsultADoctorPageImage img {
+            width: 100%;
+            border-radius: 8px 8px 0 0; /* Rounded top corners */
+            display: block;
+        }
+
+        /* Ensure .header_skip remains over the image */
+        .header_skip {
+            position: absolute;
+            top: 10px;
+            left: 10px;
+            z-index: 2;
+        }
+
+        #backIcon {
+            width: 25px;
+        }
+
+        /* Content directly follows the image */
+        .PleaseConsultADoctorPageContent {
+            text-align: center;
+            padding: 32px 20px;
+        }
+
+        /* Title follows right under the image */
+        .PleaseConsultADoctorPageHeader {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 32px;
+        }
+
+        .leaseConsultADoctorBulletPoint {
+            display: flex;
+            align-items: center;
+            margin: 10px 0;
+        }
+
+        .check-image {
+            margin-right: 10px;
+            width: 20px;
+        }
+
+        /* Next button stays at the bottom */
+        .PleaseConsultADoctorPageNextButton {
+            background: #F16675;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 16px;
+            font-family: 'Inter', sans-serif;
+            font-weight: 600;
+            font-size: 14px;
+            width: calc(100% - 148px); /* 74px from left and right */
+            position: absolute;
+            bottom: 16px;
+            left: 50%;
+            transform: translateX(-50%);
+            cursor: pointer;
+        }
+
+        .PleaseConsultADoctorPageNextButton:hover {
+            background: #D95562;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .PleaseConsultADoctorPageHeader {
+                font-size: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        
+        <div class="PleaseConsultADoctorPageImage">
+            <img src="assets/PleaseConsultADoctorImage.png" alt="Consult a Doctor">
+            <div class="header_skip">
+                <a href="page1.html">
+                    <img src="assets/back-icon.png" alt="Back" id="backIcon">
+                </a>
+            </div>
+        </div>
+            
+        <div class="PleaseConsultADoctorPageContent">
+            <div class="PleaseConsultADoctorPageHeader">Please consult a Doctor</div>
+            <div class="leaseConsultADoctorBulletPoint">
+                <img src="assets/check-icon.png" alt="Check" class="check-image">
+                <span>Your child is under 12 weeks old, has a fever over 40°C in the morning, and shows signs of altered consciousness.</span>
+            </div>
+
+            <div class="leaseConsultADoctorBulletPoint">
+                <img src="assets/check-icon.png" alt="Check" class="check-image">
+                <span>All children under the age of 12 weeks with fever should be seen by a doctor on the same day.</span>
+            </div>
+        </div>
+
+        <button class="PleaseConsultADoctorPageNextButton">Next</button>
+
+    </div>
+</body>
+</html>
